@@ -1,0 +1,15 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "tbright",
+  "description": "Tim Bright's personal Claude Code plugins.",
+  "owner": {
+    "name": "Tim Bright"
+  },
+  "plugins": [
+    {
+      "name": "tbright",
+      "description": "Personal skills: article-style explanations and friends.",
+      "source": "./"
+    }
+  ]
+}
