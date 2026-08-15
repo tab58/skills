@@ -38,6 +38,14 @@ Plans a task before any implementation. Enters plan mode, explores the codebase,
 /tbright:plan Add rate limiting to the document search endpoint
 ```
 
+### `/tbright:refactor-go <package path or description>`
+
+Refactors one Go package to conform to a fixed set of house principles: UNIX-style small packages built around an obvious conceptual model, black-box encapsulation, business logic in public methods with focused private helpers, "accept interfaces, return structs," one root struct per package-named file, purpose-grouped non-root files, exhaustive public-API tests, and doc comments on every exported identifier — plus a catalog of Go concurrency/design patterns (functional options, worker pool, pipeline, strategy, command, fan-out/fan-in, repository) to reach for when they fit. Enters plan mode, infers the package's conceptual model from its current code, confirms it with you, then proposes a refactor plan for approval before touching anything.
+
+```
+/tbright:refactor-go internal/orders
+```
+
 ## Development
 
 1. Edit skill files under `skills/<name>/SKILL.md` (new skills: add a new directory there).
