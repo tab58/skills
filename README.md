@@ -8,7 +8,7 @@ From a terminal:
 
 ```bash
 claude plugin marketplace add tab58/skills
-claude plugin install tbright@tbright
+claude plugin install tbright-dev@tbright
 ```
 
 Or inside a Claude Code session:
